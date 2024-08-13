@@ -231,15 +231,11 @@ span {
 	}
 	21%,
 	40% {
-		content: 'Developer';
+		content: 'Frontend Developer';
 	}
 	41%,
 	60% {
-		content: 'Web Designer';
-	}
-	61%,
-	80% {
-		content: 'Youtuber';
+		content: 'Fullstack Developer';
 	}
 	81%,
 	100% {
@@ -273,11 +269,35 @@ span {
 	}
 }
 
-/* New styles for tech stack section */
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+ul li {
+	font-size: 1.6rem;
+	color: white;
+	padding: 0.5rem 1.5rem;
+	background-color: #333;
+	border-radius: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+ul li::before {
+	content: '•';
+	color: #e11d48;
+	font-size: 2rem;
+	margin-right: 0.5rem;
+}
+
 .tech-stack {
 	margin-top: 2rem;
-	font-size: 1.6rem;
-	color: #e11d48;
+	color: white;
 }
 
 .tech-stack li {
