@@ -2,86 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website With Login & Registration | Codehal</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio Website</title>
 </head>
 
 <body>
+  <header>
+    <a href="#" class="logo">Magomed</a>
 
-    <header>
-        <h2 class="logo">Logo</h2>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <button class="btnLogin-popup">Login</button>
-        </nav>
-    </header>
-
-    <div class="wrapper">
-        <div class="icon-close"><ion-icon name="close"></ion-icon></div>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label for="">Email</label>
-                </div>
-
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">Remember me</label>
-                    <a href="#">Forgot Password?</a>
-                </div>
-                <button class="btn" type="submit">Login</button>
-                <div class="login-register">
-                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
-                </div>
-            </form>
-        </div>
-
-        <div class="form-box register">
-            <h2>Registration</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="person"></ion-icon></span>
-                    <input type="text" required>
-                    <label>Username</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label for="">Email</label>
-                </div>
-
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">I agree to the terms & conditions</label>
-                </div>
-                <button class="btn" type="submit">Register</button>
-                <div class="login-register">
-                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
-                </div>
-            </form>
-        </div>
+    <nav>
+      <a href="#" class="active"> Home</a>
+      <a href="#">Services</a>
+      <a href="#">Skills</a>
+      <a href="#">Education</a>
+      <!-- <a href="#">Experience</a> -->
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <section class="home">
+    <div class="home-img">
+      <img src="porterjpg.jpg" alt="avatar">
     </div>
-
-    <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div class="home-content">
+      <h1>Hi, I'm <span>Magomed</span></h1>
+      <h3 class="typing-text">A Frontend Developer from Ingushetia, Russia</h3>
+      <p>I'm 19 years old and have been in the IT field for two years. I enjoy creating 2D and 3D games in Unity and
+        playing chess.</p>
+      <h4>My Tech Stack:</h4>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Redux Toolkit</li>
+        <li>Zustand</li>
+        <li>React Router</li>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>MongoDB</li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://t.me/tochievmuhammad" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://t.me/tochievmuhammad" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://t.me/tochievmuhammad" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://t.me/tochievmuhammad" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <a href="https://t.me/tochievmuhammad" class="btn">Hire me</a>
+    </div>
+  </section>
 </body>
 
 </html>
