@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Quiz</title>
+  <link rel="icon" href="./img/quiz.png" type="image/png">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <div id="start-screen">
+    <h1 class="title">Добро пожаловать в Викторину!</h1>
+    <button class="quiz-submit" id="start-btn">Начать</button>
+  </div>
+
+  <div id="level-screen" class="hidden">
+    <h2 class="title">Выберите уровень сложности</h2>
+    <button class="quiz-submit" data-level="easy">Так себе</button>
+    <button class="quiz-submit" data-level="medium">Нормально</button>
+    <button class="quiz-submit" data-level="hard">Хардкор</button>
+
+  </div>
+
+  <div class="quiz hidden" id="quiz">
+    <div class="quiz-header" id="header"></div>
+    <ul class="quiz-list" id="list"></ul>
+    <div class="progress-bar">
+      <div class="progress-bar-fill"></div>
+    </div>
+    <button class="quiz-submit submit hidden" id="submit">Ответить</button>
+  </div>
+
+  <script type="module" src="main.js"></script>
+
+</body>
+
+</html>
