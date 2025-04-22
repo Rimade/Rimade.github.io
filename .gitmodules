@@ -1,0 +1,3 @@
+[submodule "skywatch"]
+	path = skywatch
+	url = git@github.com:Rimade/skywatch.git
