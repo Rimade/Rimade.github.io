@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Сообщение отправлено</title>
+  <style>
+    .thanks-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 100px);
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .thanks-icon {
+      font-size: 8rem;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+      animation: pulse 2s infinite;
+    }
+
+    .thanks-title {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+
+    .thanks-message {
+      font-size: 2rem;
+      max-width: 600px;
+      margin-bottom: 3rem;
+      line-height: 1.6;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">Магомед</a>
+    <nav>
+      <a href="index.html">Вернуться на главную</a>
+    </nav>
+  </header>
+
+  <div class="thanks-container">
+    <i class="fas fa-check-circle thanks-icon"></i>
+    <h1 class="thanks-title">Спасибо за сообщение!</h1>
+    <p class="thanks-message">Ваше сообщение успешно отправлено. Я свяжусь с вами в ближайшее время.</p>
+    <a href="index.html" class="btn">Вернуться на главную</a>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Магомед Амин. Все права защищены.</p>
+      <div class="footer-social">
+        <a href="https://t.me/tochievmuhammad" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://github.com/Rimade" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/genzor_art?igsh=MWpoMTcwYzY2c3djeg==" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

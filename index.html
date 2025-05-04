@@ -1,55 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Portfolio Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Профессиональное портфолио Магомеда Амина | Опытный Frontend, React и Fullstack разработчик с экспертизой в современных веб-технологиях">
+  <meta name="keywords"
+    content="Веб-разработка, Frontend Developer, React Developer, Fullstack Developer, JavaScript, TypeScript, Профессиональное портфолио, Разработка сайтов">
+  <meta name="author" content="Магомед Амин">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Магомед Амин | Веб-разработка</title>
 </head>
 
 <body>
   <header>
-    <a href="#" class="logo">Magomed</a>
+    <a href="#" class="logo">Amingezz</a>
 
     <nav>
-      <a href="#" class="active"> Home</a>
-      <a href="#">Services</a>
-      <a href="#">Skills</a>
-      <a href="#">Education</a>
-      <a href="#">Experience</a>
-      <a href="#">Contact</a>
+      <a href="#home" class="active">Главная</a>
+      <a href="#skills">Навыки</a>
+      <a href="#services">Услуги</a>
+      <a href="#experience">Опыт</a>
+      <a href="#education">Образование</a>
+      <a href="#contact">Контакты</a>
     </nav>
-  </header>
-  <section class="home">
-    <div class="home-img">
-      <img src="avatar.jpg" alt="avatar">
+    <div class="menu-btn">
+      <div class="menu-btn__burger"></div>
     </div>
-    <div class="home-content">
-      <h1>Hi, I'm <span>Magomed</span></h1>
-      <h3 class="typing-text">A Frontend Developer from Ingushetia, Russia</h3>
-      <p>I'm 19 years old and have been in the IT field for two years. I enjoy creating 2D and 3D games in Unity and
-        playing chess.</p>
-      <ul>
-        <li>HTML&CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Redux Toolkit</li>
-        <li>React Router</li>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>MongoDB</li>
-      </ul>
+  </header>
+  <section class="home" id="home">
+    <div class="home-img" data-aos="fade-right" data-aos-duration="1000">
+      <img src="img/avatar.jpg" alt="Фото Магомеда Амина" loading="lazy">
+    </div>
+    <div class="home-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+      <h1>Привет, я <span class="highlight-text">Амин</span></h1>
+      <h3 class="typing-text">Frontend-разработчик</h3>
+      <p>Мне 19 лет, и я работаю в IT-сфере уже два года. Мне нравится создавать 2D и 3D игры в Unity и играть в
+        шахматы.</p>
       <div class="social-icons">
         <a href="https://t.me/tochievmuhammad" target="_blank"><i class="fa-brands fa-telegram"></i></a>
         <a href="https://github.com/Rimade" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://t.me/tochievmuhammad" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://www.instagram.com/genzor_art?igsh=MWpoMTcwYzY2c3djeg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/genzor_art?igsh=MWpoMTcwYzY2c3djeg==" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
       </div>
-      <a href="https://t.me/tochievmuhammad" class="btn">Hire me</a>
+      <a href="#contact" class="btn">Связаться со мной</a>
+    </div>
+    <div class="scroll-down">
+      <a href="#skills"><i class="fas fa-chevron-down"></i></a>
     </div>
   </section>
+  <section class="skills" id="skills">
+    <h2>Навыки и технологии</h2>
+    <div class="skills-grid">
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">HTML5</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">CSS3</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">Sass/SCSS</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">JavaScript</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">TypeScript</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">React</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">Redux Toolkit</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">React Router</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">Next.js</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">Vue.js</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">Nuxt.js</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">Angular</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">Node.js</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">Express</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">NestJS</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">MongoDB</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">PostgreSQL</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">MySQL</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">GraphQL</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">Socket.io</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">Webpack</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">Vite</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">Jest</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">Docker</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">Git</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">Figma</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">Unity</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">C#</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">Python</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">REST API</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">Swagger</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">Material UI</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">Tailwind CSS</div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">Bootstrap</div>
+    </div>
+    <div class="section-divider">
+      <div class="divider-line"></div>
+      <i class="fas fa-code"></i>
+      <div class="divider-line"></div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <h2>Услуги</h2>
+    <div class="services-list">
+      <div class="service-card" data-aos="flip-left" data-aos-delay="100">
+        <i class="fas fa-code"></i>
+        <h3>Разработка сайтов под ключ</h3>
+        <p>Создание современных, адаптивных и оптимизированных сайтов с нуля</p>
+      </div>
+      <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+        <i class="fas fa-desktop"></i>
+        <h3>Frontend-разработка</h3>
+        <p>Создание интерактивных и отзывчивых пользовательских интерфейсов</p>
+      </div>
+      <div class="service-card" data-aos="flip-left" data-aos-delay="300">
+        <i class="fas fa-server"></i>
+        <h3>Backend-разработка</h3>
+        <p>Разработка серверной части приложений с использованием Node.js и Express</p>
+      </div>
+      <div class="service-card" data-aos="flip-left" data-aos-delay="400">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Создание SPA и PWA</h3>
+        <p>Разработка одностраничных и прогрессивных веб-приложений</p>
+      </div>
+      <div class="service-card" data-aos="flip-left" data-aos-delay="500">
+        <i class="fas fa-plug"></i>
+        <h3>Интеграция с API</h3>
+        <p>Подключение внешних сервисов и создание собственных API</p>
+      </div>
+      <div class="service-card" data-aos="flip-left" data-aos-delay="600">
+        <i class="fas fa-tachometer-alt"></i>
+        <h3>Тестирование и оптимизация</h3>
+        <p>Улучшение производительности и скорости загрузки веб-приложений</p>
+      </div>
+    </div>
+    <div class="section-divider">
+      <div class="divider-line"></div>
+      <i class="fas fa-laptop-code"></i>
+      <div class="divider-line"></div>
+    </div>
+  </section>
+  <section class="experience" id="experience">
+    <h2>Опыт</h2>
+    <div class="experience-list">
+      <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="exp-year">2022 — настоящее время</div>
+        <h3>Фриланс-проекты</h3>
+        <p>Разработка сайтов, веб-приложений, игр на заказ</p>
+        <div class="exp-tags">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+        </div>
+      </div>
+      <div class="experience-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="exp-year">2021 — 2022</div>
+        <h3>Участие в хакатонах и командных проектах</h3>
+        <p>Создание прототипов и MVP в сжатые сроки</p>
+        <div class="exp-tags">
+          <span>Unity</span>
+          <span>C#</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+    <div class="section-divider">
+      <div class="divider-line"></div>
+      <i class="fas fa-graduation-cap"></i>
+      <div class="divider-line"></div>
+    </div>
+  </section>
+  <section class="education" id="education">
+    <h2>Образование</h2>
+    <div class="education-list">
+      <div class="education-card" data-aos="fade-right" data-aos-delay="100">
+        <div class="edu-year">2022 — настоящее время</div>
+        <h3>Самостоятельное обучение, онлайн-курсы</h3>
+        <p>Frontend, Backend, Fullstack разработка</p>
+      </div>
+      <div class="education-card" data-aos="fade-right" data-aos-delay="300">
+        <div class="edu-year">2021 — 2022</div>
+        <h3>Курсы по Unity и разработке игр</h3>
+        <p>Изучение C# и разработка 2D/3D игр</p>
+      </div>
+    </div>
+    <div class="section-divider">
+      <div class="divider-line"></div>
+      <i class="fas fa-envelope"></i>
+      <div class="divider-line"></div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2>Контакты</h2>
+    <div class="contact-list">
+      <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fab fa-telegram"></i>
+        <h3>Telegram</h3>
+        <a href="https://t.me/tochievmuhammad" target="_blank">@tochievmuhammad</a>
+      </div>
+      <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
+        <a href="https://github.com/Rimade" target="_blank">Rimade</a>
+      </div>
+      <div class="contact-card" data-aos="zoom-in" data-aos-delay="300">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <a href="mailto:muhammad-amin4@mail.ru">muhammad-amin4@mail.ru</a>
+      </div>
+    </div>
+    <div class="contact-form" data-aos="fade-up" data-aos-delay="400">
+      <h3>Напишите мне</h3>
+      <form action="https://formspree.io/f/xdkgeqrd" method="POST" id="contactForm">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+        <input type="hidden" name="_subject" value="Новое сообщение с сайта портфолио">
+        <input type="hidden" name="_next" value="thanks.html">
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Магомед Амин. Все права защищены.</p>
+      <div class="footer-links">
+        <a href="#home">Главная</a>
+        <a href="#skills">Навыки</a>
+        <a href="#contact">Контакты</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://t.me/tochievmuhammad" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://github.com/Rimade" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/genzor_art?igsh=MWpoMTcwYzY2c3djeg==" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="back-to-top">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script async src="main.js"></script>
 </body>
 
 </html>
