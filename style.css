@@ -207,7 +207,7 @@ nav a.active {
 	justify-content: center;
 	align-items: center;
 	gap: 8rem;
-	padding-top: 15rem;
+	padding-top: 12rem;
 }
 
 .home-content h1 {
@@ -780,7 +780,7 @@ footer {
 
 	.home {
 		flex-direction: column;
-		padding-top: 18rem;
+		/* padding-top: 18rem; */
 		gap: 3rem;
 	}
 
